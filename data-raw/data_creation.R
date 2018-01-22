@@ -50,12 +50,13 @@ urlso <- c("www.dropbox.com/s/t86uzrxc5mivegu/VNM_ppp_v2b_2009.tif?raw=1",
            "www.dropbox.com/s/tsuqj33662hv3pd/VNM_ppp_v2b_2015.tif?raw=1",
            "www.dropbox.com/s/qc5yzdxflefbljx/VNM_ppp_v2b_2020_UNadj.tif?raw=1")
 
-urlsc <- c("www.dropbox.com/s/qn1agzkbcdb4lr7/VNM_ppp_v2b_2009.tif?raw=1",
-           "www.dropbox.com/s/hmcehhhxv9lguah/VNM_ppp_v2b_2010_UNadj.tif?raw=1",
-           "www.dropbox.com/s/qsolker2k4xr7qq/VNM_ppp_v2b_2010.tif?raw=1",
-           "www.dropbox.com/s/njwfaxq28ivr16o/VNM_ppp_v2b_2015_UNadj.tif?raw=1",
-           "www.dropbox.com/s/w81rwt6uwnqf16s/VNM_ppp_v2b_2015.tif?raw=1",
-           "www.dropbox.com/s/d7u50gb410qkung/VNM_ppp_v2b_2020_UNadj.tif?raw=1")
+
+urlsc <- c("https://www.dropbox.com/s/uyucwu0ia2o1fq6/VNM_ppp_v2b_2009.tif?raw=1",
+           "https://www.dropbox.com/s/lpdehgg0g8km96o/VNM_ppp_v2b_2010_UNadj.tif?raw=1",
+           "https://www.dropbox.com/s/7kfnbjt3n8f69t7/VNM_ppp_v2b_2010.tif?raw=1",
+           "https://www.dropbox.com/s/zlk4bjjdjghyx6q/VNM_ppp_v2b_2015_UNadj.tif?raw=1",
+           "https://www.dropbox.com/s/tv2vktd1rlln3gh/VNM_ppp_v2b_2015.tif?raw=1",
+           "https://www.dropbox.com/s/77flwh0uuvhms27/VNM_ppp_v2b_2020_UNadj.tif?raw=1")
 
 sizes <- c(VNM_ppp_v2b_2009.tif       = 123.2,
            VNM_ppp_v2b_2010_UNadj.tif = 123.4,
@@ -76,7 +77,7 @@ devtools::use_data(VNM_ppp_v2b_2009,
 
 # Personal installation (not run) ----------------------------------------------
 if (FALSE) {
-  origin_dir <- "data-raw/dropbox/extdata/"
+  origin_dir <- "data-raw/dropbox/data-raw/"
   dest_dir <- paste0(path.package("worldpopVN"), "/extdata/")
   if (!dir.exists(dest_dir)) dir.create(dest_dir)
   for(i in dir(origin_dir)) file.copy(paste0(origin_dir, i), paste0(dest_dir, i))

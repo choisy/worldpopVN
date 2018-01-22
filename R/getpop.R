@@ -18,7 +18,7 @@ getpop <- function(year = 2009, adjusted = FALSE) {
                     "VNM_ppp_v2b_2010", "VNM_ppp_v2b_2015_UNadj",
                     "VNM_ppp_v2b_2015", "VNM_ppp_v2b_2020_UNadj")) {
     x <- get(object)
-    filename <- paste0(path.package("worldpopVN"), "/extdata/", object, ".tif")
+    filename <- paste0(installed.packages()["worldpopVN", "LibPath"], "/worldpopVN/extdata/", object, ".tif")
     x@file@name <- filename
     if (!file.exists(filename)) {
       message("WorldPop data are not on disk.")
@@ -39,6 +39,7 @@ getpop <- function(year = 2009, adjusted = FALSE) {
           message("Writing rescaled data to disk...")
           writeRaster(x, paste(path.package("worldpopVN"), "extdata", fname,  sep = "/"),
                       "GTiff", overwrite = TRUE)
+          writeRaster(x, filename, "GTiff", overwrite = TRUE)
         }
       }
     }
