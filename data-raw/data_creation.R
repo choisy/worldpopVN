@@ -78,5 +78,6 @@ devtools::use_data(VNM_ppp_v2b_2009,
 if (FALSE) {
   origin_dir <- "data-raw/dropbox/extdata/"
   dest_dir <- paste0(path.package("worldpopVN"), "/extdata/")
+  if (!dir.exists(dest_dir)) dir.create(dest_dir)
   for(i in dir(origin_dir)) file.copy(paste0(origin_dir, i), paste0(dest_dir, i))
 }
