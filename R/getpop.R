@@ -11,6 +11,7 @@
 #' @export
 #' @importFrom raster writeRaster
 #' @importFrom mcdev download
+#' @importFrom utils installed.packages
 #'
 getpop <- function(year = 2009, adjusted = FALSE) {
   object <- paste0("VNM_ppp_v2b_", year, ifelse(adjusted, "_UNadj", ""))

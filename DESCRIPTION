@@ -8,11 +8,15 @@ Authors@R: person("Marc", "Choisy",
                   comment = c(ORCID = "https://orcid.org/0000-0002-5187-6390"))
 Description: Contains the population densities of Vietnam from the WorldPop data
     base (http://www.worldpop.org.uk).
-License: MIT + file
+License: MIT + file LICENSE
 LazyData: TRUE
 Depends:
+    R (>= 2.10),
     raster
+Imports:
+    mcdev
 RoxygenNote: 6.0.1
 Suggests: knitr,
     rmarkdown
 VignetteBuilder: knitr
+Remotes: choisy/mcdev
