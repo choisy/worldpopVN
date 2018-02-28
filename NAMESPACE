@@ -3,3 +3,4 @@
 export(getpop)
 importFrom(mcdev,download)
 importFrom(raster,writeRaster)
+importFrom(utils,installed.packages)
