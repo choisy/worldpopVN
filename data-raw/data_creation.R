@@ -30,6 +30,8 @@ dataType(VNM_ppp_v2b_2010_UNadj) <- datatype
 dataType(VNM_ppp_v2b_2015_UNadj) <- datatype
 dataType(VNM_ppp_v2b_2020_UNadj) <- datatype
 
+VNM_ppp_v2b_2009 <- trim(VNM_ppp_v2b_2009)
+
 # Writting to files ------------------------------------------------------------
 destdir <- "data-raw/dropbox/extdata"
 if (!dir.exists(destdir)) dir.create(destdir)
@@ -51,7 +53,7 @@ urlso <- c("www.dropbox.com/s/t86uzrxc5mivegu/VNM_ppp_v2b_2009.tif?raw=1",
            "www.dropbox.com/s/qc5yzdxflefbljx/VNM_ppp_v2b_2020_UNadj.tif?raw=1")
 
 
-urlsc <- c("https://www.dropbox.com/s/uyucwu0ia2o1fq6/VNM_ppp_v2b_2009.tif?raw=1",
+urlsc <- c("https://www.dropbox.com/s/859mli7dsvl1sqg/VNM_ppp_v2b_2009.tif?raw=1",
            "https://www.dropbox.com/s/lpdehgg0g8km96o/VNM_ppp_v2b_2010_UNadj.tif?raw=1",
            "https://www.dropbox.com/s/7kfnbjt3n8f69t7/VNM_ppp_v2b_2010.tif?raw=1",
            "https://www.dropbox.com/s/zlk4bjjdjghyx6q/VNM_ppp_v2b_2015_UNadj.tif?raw=1",
