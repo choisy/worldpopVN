@@ -38,8 +38,6 @@ getpop <- function(year = 2009, adjusted = FALSE) {
           message("Rescaling the data...")
           values(x) <- values(x) / 1e4
           message("Writing rescaled data to disk...")
-          writeRaster(x, paste(path.package("worldpopVN"), "extdata", fname,  sep = "/"),
-                      "GTiff", overwrite = TRUE)
           writeRaster(x, filename, "GTiff", overwrite = TRUE)
         }
       }
