@@ -9,7 +9,7 @@
 #' match UN population divisions estimates. TRUE is incompatible with year = 2009.
 #'
 #' @export
-#' @importFrom raster writeRaster
+#' @importFrom raster writeRaster values values<-
 #' @importFrom mcdev download
 #' @importFrom utils installed.packages
 #'

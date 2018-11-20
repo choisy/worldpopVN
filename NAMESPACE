@@ -2,5 +2,7 @@
 
 export(getpop)
 importFrom(mcdev,download)
+importFrom(raster,"values<-")
+importFrom(raster,values)
 importFrom(raster,writeRaster)
 importFrom(utils,installed.packages)
