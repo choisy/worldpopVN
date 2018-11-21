@@ -14,8 +14,8 @@
 #' @importFrom utils installed.packages
 #'
 getpop <- function(year = 2009, adjusted = FALSE) {
-  if (grepl("Windows", sessionInfo()$running)) method <- "curl"
-  else method <- "libcurl"
+  if (grepl("Windows", sessionInfo()$running))
+    download <- function(...) mcdev::download(..., method = "curl")
   object <- paste0("VNM_ppp_v2b_", year, ifelse(adjusted, "_UNadj", ""))
   if (object %in% c("VNM_ppp_v2b_2009", "VNM_ppp_v2b_2010_UNadj",
                     "VNM_ppp_v2b_2010", "VNM_ppp_v2b_2015_UNadj",
@@ -34,9 +34,9 @@ getpop <- function(year = 2009, adjusted = FALSE) {
         message("Note: a compressed version will require additional compututing (< 60'') for uncompressing.")
         ans <- readline()
         if (ans == "o")
-          download(grep(fname, worldpopVN:::urlso, value = TRUE), "worldpopVN", fname, method = method)
+          download(grep(fname, worldpopVN:::urlso, value = TRUE), "worldpopVN", fname)
         else {
-          download(grep(fname, worldpopVN:::urlsc, value = TRUE), "worldpopVN", fname, method = method)
+          download(grep(fname, worldpopVN:::urlsc, value = TRUE), "worldpopVN", fname)
           message("Rescaling the data...")
           values(x) <- values(x) / 1e4
           message("Writing rescaled data to disk...")
