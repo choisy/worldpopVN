@@ -29,7 +29,7 @@ getpop <- function(year = 2009, adjusted = FALSE) {
         fname <- basename(filename)
         message(paste0("Do you want to download the original file (603.8 MB) or a compressed version (",
                        worldpopVN:::sizes[fname], " MB)? o / c (default)"))
-        message("Note: a compressed version will require additional compututing (< 60') for uncompressing.")
+        message("Note: a compressed version will require additional compututing (< 60'') for uncompressing.")
         ans <- readline()
         if (ans == "o")
           download(grep(fname, worldpopVN:::urlso, value = TRUE), "worldpopVN", fname)
