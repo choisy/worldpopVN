@@ -45,12 +45,12 @@ VNM_ppp_v2b_2020_UNadj <- writeRaster(VNM_ppp_v2b_2020_UNadj, "data-raw/dropbox/
 # URLs -------------------------------------------------------------------------
 # These URL are from data-raw/dropbox/data-raw, that's why we don't need the
 # rescale in the in the getpop function:
-urlso <- c("www.dropbox.com/s/t86uzrxc5mivegu/VNM_ppp_v2b_2009.tif?raw=1",
-           "www.dropbox.com/s/0u6itmwex8i27fi/VNM_ppp_v2b_2010_UNadj.tif?raw=1",
-           "www.dropbox.com/s/ds37tbig8wxlyo7/VNM_ppp_v2b_2010.tif?raw=1",
-           "www.dropbox.com/s/m6aw27hdz9flmch/VNM_ppp_v2b_2015_UNadj.tif?raw=1",
-           "www.dropbox.com/s/tsuqj33662hv3pd/VNM_ppp_v2b_2015.tif?raw=1",
-           "www.dropbox.com/s/qc5yzdxflefbljx/VNM_ppp_v2b_2020_UNadj.tif?raw=1")
+urlso <- c("https://www.dropbox.com/s/t86uzrxc5mivegu/VNM_ppp_v2b_2009.tif?raw=1",
+           "https://www.dropbox.com/s/0u6itmwex8i27fi/VNM_ppp_v2b_2010_UNadj.tif?raw=1",
+           "https://www.dropbox.com/s/ds37tbig8wxlyo7/VNM_ppp_v2b_2010.tif?raw=1",
+           "https://www.dropbox.com/s/m6aw27hdz9flmch/VNM_ppp_v2b_2015_UNadj.tif?raw=1",
+           "https://www.dropbox.com/s/tsuqj33662hv3pd/VNM_ppp_v2b_2015.tif?raw=1",
+           "https://www.dropbox.com/s/qc5yzdxflefbljx/VNM_ppp_v2b_2020_UNadj.tif?raw=1")
 
 
 urlsc <- c("https://www.dropbox.com/s/859mli7dsvl1sqg/VNM_ppp_v2b_2009.tif?raw=1",
