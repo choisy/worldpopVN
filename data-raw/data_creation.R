@@ -30,8 +30,6 @@ dataType(VNM_ppp_v2b_2010_UNadj) <- datatype
 dataType(VNM_ppp_v2b_2015_UNadj) <- datatype
 dataType(VNM_ppp_v2b_2020_UNadj) <- datatype
 
-VNM_ppp_v2b_2009 <- trim(VNM_ppp_v2b_2009)
-
 # Writting to files ------------------------------------------------------------
 destdir <- "data-raw/dropbox/extdata"
 if (!dir.exists(destdir)) dir.create(destdir)
