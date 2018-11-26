@@ -40,6 +40,9 @@ VNM_ppp_v2b_2010_UNadj <- writeRaster(VNM_ppp_v2b_2010_UNadj, "data-raw/dropbox/
 VNM_ppp_v2b_2015_UNadj <- writeRaster(VNM_ppp_v2b_2015_UNadj, "data-raw/dropbox/extdata/VNM_ppp_v2b_2015_UNadj.tif", "GTiff", datatype="INT4U", overwrite = TRUE)
 VNM_ppp_v2b_2020_UNadj <- writeRaster(VNM_ppp_v2b_2020_UNadj, "data-raw/dropbox/extdata/VNM_ppp_v2b_2020_UNadj.tif", "GTiff", datatype="INT4U", overwrite = TRUE)
 
+# Populations centers ----------------------------------------------------------
+source("data-raw/populations_centers_pipeline.R")
+
 # URLs -------------------------------------------------------------------------
 # These URL are from data-raw/dropbox/data-raw, that's why we don't need the
 # rescale in the in the getpop function:
@@ -66,14 +69,15 @@ sizes <- c(VNM_ppp_v2b_2009.tif       = 123.2,
            VNM_ppp_v2b_2020_UNadj.tif = 123.8)
 
 # Saving objects ---------------------------------------------------------------
-devtools::use_data(VNM_ppp_v2b_2009,
-                   VNM_ppp_v2b_2010,
-                   VNM_ppp_v2b_2015,
-                   VNM_ppp_v2b_2010_UNadj,
-                   VNM_ppp_v2b_2015_UNadj,
-                   VNM_ppp_v2b_2020_UNadj,
-                   urlso, urlsc, sizes,
-                   internal = TRUE, overwrite = TRUE)
+usethis::use_data(VNM_ppp_v2b_2009,
+                  VNM_ppp_v2b_2010,
+                  VNM_ppp_v2b_2015,
+                  VNM_ppp_v2b_2010_UNadj,
+                  VNM_ppp_v2b_2015_UNadj,
+                  VNM_ppp_v2b_2020_UNadj,
+                  urlso, urlsc, sizes,
+                  popcenters2009,
+                  internal = TRUE, overwrite = TRUE)
 
 # Personal installation (not run) ----------------------------------------------
 if (FALSE) {
