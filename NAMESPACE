@@ -2,7 +2,6 @@
 
 export(getpop)
 export(popcenters2009)
-importFrom(mcdev,download)
 importFrom(raster,"values<-")
 importFrom(raster,values)
 importFrom(raster,writeRaster)
