@@ -7,13 +7,20 @@
 getpop(year = 2009, adjusted = FALSE)
 }
 \arguments{
-\item{year}{A numeric reflecting the year to retrieve the data. Could be 2009,
-2010, 2015 or 2020. 2009 is incompatible with adjusted = TRUE.}
+\item{year}{A numeric reflecting the year to retrieve the data. Could be
+2009, 2010, 2015 or 2020. 2009 is incompatible with adjusted = TRUE.}
 
 \item{adjusted}{A logical indicating whether the data should be adjusted to
-match UN population divisions estimates. TRUE is incompatible with year = 2009.}
+match UN population divisions estimates. TRUE is incompatible with
+year = 2009.}
 }
 \description{
 Retrieves a raster file containing the local human population density of
 Vietnam.
+}
+\examples{
+popvn_2009 <- getpop()
+
+# Or for 2020 with ajusted value to match UN population divisions estimates :
+popvn_a2020 <- getpop(2020, adjusted = TRUE)
 }
