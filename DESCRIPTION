@@ -14,11 +14,15 @@ Description: Contains the population densities of Vietnam from the WorldPop data
     base (http://www.worldpop.org.uk).
 Encoding: UTF-8
 License: MIT + file LICENSE
+URL: https://github.com/choisy/worldpopVN
+BugReports: https://github.com/choisy/worldpopVN/issues
 LazyData: TRUE
 Depends:
-    R (>= 2.10),
-    raster
+    R (>= 2.10)
 RoxygenNote: 6.1.1
-Suggests: knitr,
-    rmarkdown
+Imports: raster
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat (>= 2.1.0)
 VignetteBuilder: knitr
