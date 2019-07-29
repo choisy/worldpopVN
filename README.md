@@ -8,11 +8,11 @@ contains the populations sizes multiplied by 10,000.**
 
 ## Installation and loading
 
-You can install `worldpopVN` from [Bitbucket](https://bitbucket.org/choisy/worldpopVN)
+You can install `worldpopVN` from [GitHub](https://github.com/choisy/worldpopVN)
 
 ```{r eval = FALSE}
 # install.packages("devtools")
-devtools::install_bitbucket("choisy/worldpopVN", build_vignettes = TRUE)
+devtools::install_github("choisy/worldpopVN", build_vignettes = TRUE)
 ```
 
 Once installed, you can load the package:

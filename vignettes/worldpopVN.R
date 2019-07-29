@@ -8,7 +8,7 @@ fig.width=4.24725,fig.retina=2,fig.align="center")
 
 ## ----eval = FALSE--------------------------------------------------------
 #  # install.packages("devtools")
-#  devtools::install_bitbucket("choisy/worldpopVN", build_vignettes = TRUE)
+#  devtools::install_github("choisy/worldpopVN", build_vignettes = TRUE)
 
 ## ------------------------------------------------------------------------
 library(worldpopVN)
