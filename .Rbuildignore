@@ -5,3 +5,4 @@
 ^website$
 ^\.httr-oauth$
 token.rds
+^README\.Rmd$
