@@ -5,6 +5,8 @@
 
 <!-- badges: start -->
 
+[![Travis build
+status](https://travis-ci.org/epix-project/worldpopVN.svg?branch=master)](https://travis-ci.org/epix-project/worldpopVN)
 <!-- badges: end -->
 
 This package contains local human population sizes per geographical
